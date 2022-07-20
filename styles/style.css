@@ -1,0 +1,120 @@
+/* universal styles and fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------banner section design----------- */
+.banner{
+    width: 1321px;
+    height: 646px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.831), rgb(62, 29, 29));
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.banner-info{
+    width: 531px;
+    height: 424px;
+    margin-right: 12px;
+}
+.banner-info>h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 80px;
+}
+.banner-info>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.banner-info>a{
+    text-decoration: none;
+    color: #ffffff;
+    height: 56px;
+    width: 187px;
+    border-radius: 5px;
+    padding: 16px 25px;
+    background: linear-gradient(to right, rgb(149, 98, 98), rgb(145, 145, 74));
+
+}
+
+.banner-img{
+    margin-left: 12px;
+    margin-top: 40px;
+}
+.banner-img img{
+    width: 581px;
+    /* height: 613px; */
+    object-fit: fill;
+}
+/* -------------main ---------- */
+
+main{
+    width: 1321px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.aside{
+    width: 312px;
+    height: 312px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.aside>a{
+    display: block;
+    width: 240px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+article{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.blogs .blog-img img{
+    width: 312px;
+    height: 175px;
+}
+.blog-info, .blog-other-info{
+    margin: 20px 20px;
+}
+.blog-other-info{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.blogs .blog-info>a{
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+
+}
+
+.blog-other-info>div{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+}
+.blog-other-info>div>img{
+    margin-right: 10px;
+}
