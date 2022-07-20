@@ -45,7 +45,12 @@ body{
     border-radius: 5px;
     padding: 16px 25px;
     background: linear-gradient(to right, rgb(149, 98, 98), rgb(145, 145, 74));
+    font-size: 20px;
 
+}
+.banner-info .fa-greater-than{
+    margin-left: 10px;
+    font-size: 24px;
 }
 
 .banner-img{
@@ -66,7 +71,7 @@ main{
     justify-content: space-between;
 }
 .aside{
-    width: 312px;
+    min-width: 312px;
     height: 312px;
     background-color: black;
     display: flex;
@@ -75,23 +80,48 @@ main{
     justify-content: space-around;
     border-radius: 20px;
 }
-.aside>a{
-    display: block;
-    width: 240px;
-    height: 60px;
-    background-color: #ffffff;
+.aside>button{
+    width: 252px;
+    height: 64px;
     border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+    background-color: #ffffff;
 }
 article{
     width: 75%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
 }
+.blogs{
+    border: 2px solid #b9b9b9;
+    border-radius: 10px;
+}
+/* .view-btn{
+    grid-column: 1/4;
+    text-align: center;
+}
+.view-btn>button{
+    background-color: #DD0000;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    display: none;
+} */
 .blogs .blog-img img{
-    width: 312px;
-    height: 175px;
+    width: 100%;
+    /* height: 175px; */
 }
-.blog-info, .blog-other-info{
+.blog-info{
+    margin: 20px 0 20px 20px;
+}
+.blog-other-info{
     margin: 20px 20px;
 }
 .blog-other-info{
@@ -117,4 +147,55 @@ article{
 }
 .blog-other-info>div>img{
     margin-right: 10px;
+}
+.blog-other-info>div>p{
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/* ---------footer start-------- */
+
+footer{
+    width: 100%;
+    background-color: #161616;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.footer-title{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    /* margin-top: 40px; */
+    
+}
+footer>hr{
+    width: 1320px;
+    margin: 50px auto;
+    border: 1px solid #FFFFFF1A;
+}
+.footer-items{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+.footer-items p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #b9b9b9;
+    margin: 0 30px;
+}
+/* -----footer end------ */
+
+/* -----------media querry----------- */
+
+@media screen and (max-width:992px) and (min-width:577px) {
+    
+    .aside{
+        display: none;
+    }
+    article{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+        margin: 0 auto;
+    }
 }
